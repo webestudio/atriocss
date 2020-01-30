@@ -18,6 +18,11 @@ h6 {
   -webkit-text-fill-color: transparent;
   text-align: center;
   text-shadow: none;
+  /* animation*/
+  animation: mg 1.5s;
+  animation-iteration-count: 1;
+  opacity: 0;
+  animation-fill-mode: forwards;
 }
 
 .sub-header {
@@ -43,3 +48,5 @@ pre {
   display: none;
   transition: all 0.2s ease;
 }
+
+@keyframes mg {from {opacity: 0;}to {opacity: 1;}}
