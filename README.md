@@ -2,14 +2,14 @@ atrio.css
 ====
 Small CSS Framework for web design. HTML5 Kit resource collection.
 
-Demo y documentación
+demo y documentación
 ===
 [https://atrio.site/atriocss](https://atriocss.atrio.site)
 
 
-Instalación
+instalación
 ====
-via [cdnjs](https://github.com/webestudio/atriocss/)
+Puedes clonar o [descargar este repositorio](https://github.com/webestudio/atriocss/archive/master.zip) en formato zip.
 ```html
 <link rel="stylesheet" href="css/atriocss.min.css" media="all">
 
@@ -17,15 +17,12 @@ via [cdnjs](https://github.com/webestudio/atriocss/)
 <script src="js/atriocss.min.js"></script>
 ```
 
-O, también puedes clonar o [descargar este repositorio](https://github.com/webestudio/atriocss/archive/master.zip) en formato zip.
-
-
-Créditos
+créditos
 ===
 [Jorge Bravo](https://twitter.com/webestudio) desarrollador web.
 
 
-Licencia
+licencia
 ====
 Sientete libre de usar este código para todo tipo de proyectos. ;)
 
