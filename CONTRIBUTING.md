@@ -1,4 +1,4 @@
-# Contributing to Simple Line Icons
+# Contributing to atrio.css
 
 First off, thanks for taking the time to contribute!
 
