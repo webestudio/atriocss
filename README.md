@@ -4,7 +4,7 @@ Small CSS Framework for web design. HTML5 Kit resource collection.
 
 demo y documentación
 ===
-[https://atrio.site/atriocss](https://atriocss.atrio.site)
+[https://atriocss.atrio.site](https://atriocss.atrio.site)
 
 
 instalación
