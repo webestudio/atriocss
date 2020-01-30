@@ -4,14 +4,17 @@ Small CSS Framework for web design. HTML5 Kit resource collection.
 
 Demo y documentación
 ===
-[https://atrio.site/atriocss](https://atrio.site/atriocss)
+[https://atrio.site/atriocss](https://atriocss.atrio.site)
 
 
 Instalación
 ====
-via [cdnjs](http://cdnjs.com/libraries/simple-line-icons)
+via [cdnjs](https://github.com/webestudio/atriocss/)
 ```html
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.css">
+<link rel="stylesheet" href="css/atriocss.min.css" media="all">
+
+<!-- .js optional -->
+<script src="js/atriocss.min.js"></script>
 ```
 
 O, también puedes clonar o [descargar este repositorio](https://github.com/webestudio/atriocss/archive/master.zip) en formato zip.
