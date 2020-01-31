@@ -1,11 +1,11 @@
 {
   "name": "atriocss",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Small CSS Framework for web design. HTML5 Kit resource collection.",
   "homepage": "https://atriocss.atrio.site",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": ""
   },
   "keywords": [
     "CSS",
