@@ -1,4 +1,5 @@
 /* Overwrite CSS */
+/* Only demo page */
 @import url("https://fonts.googleapis.com/css?family=Nunito:300,400,800&display=swap");
 h1,
 h2,
@@ -47,6 +48,107 @@ h6 {
 pre {
   display: none;
   transition: all 0.2s ease;
+}
+
+// PRETIFY | CSS, HTML
+.pln {
+ color: #909090;
+}
+@media screen {
+ .str {
+  color: #f0c674;
+ }
+ .kwd {
+  color: #b294bb;
+ }
+ .com {
+  color: #707070;
+ }
+ .typ {
+  color: #c66;
+ }
+ .lit {
+  color: #066;
+ }
+ .pun,
+ .opn,
+ .clo {
+  color: #660;
+ }
+ .tag {
+  color: var(--powder-400);
+ }
+ .atn {
+  color: #ad4da9;
+ }
+ .atv {
+  color: #f0c674;
+ }
+ .dec,
+ .var {
+  color: #ad4da9;
+ }
+ .fun {
+  color: red;
+ }
+}
+@media print, projection {
+ .str {
+  color: #f0c674;
+ }
+ .kwd {
+  color: #b294bb;
+  font-weight: bold;
+ }
+ .com {
+  color: #707070;
+  font-style: italic;
+ }
+ .typ {
+  color: #ad4da9;
+  font-weight: bold;
+ }
+ .lit {
+  color: #044;
+ }
+ .pun,
+ .opn,
+ .clo {
+  color: #440;
+ }
+ .tag {
+  color: #b294bb;
+  font-weight: bold;
+ }
+ .atn {
+  color: #ad4da9;
+ }
+ .atv {
+  color: #c66;
+ }
+}
+pre.prettyprint {
+}
+ol.linenums {
+ margin-top: 0;
+ margin-bottom: 0;
+}
+li.L0,
+li.L1,
+li.L2,
+li.L3,
+li.L5,
+li.L6,
+li.L7,
+li.L8 {
+ list-style-type: none;
+}
+li.L1,
+li.L3,
+li.L5,
+li.L7,
+li.L9 {
+ background: #eee;
 }
 
 @keyframes mg {from {opacity: 0;}to {opacity: 1;}}
