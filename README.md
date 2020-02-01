@@ -2,6 +2,10 @@ atrio.css
 ====
 Small CSS Framework for web design. HTML5 Kit resource collection.
 
+[![npm](https://img.shields.io/npm/v/mini.css.svg)](https://www.npmjs.com/package/atriocss)
+[![license](https://img.shields.io/badge/license-MIT-yellow.svg)](https://github.com/webestudio/atriocss/blob/master/LICENSE)
+[![website](https://img.shields.io/badge/website-online-green.svg)](https://atriocss.atrio.site)
+
 demo y documentación
 ===
 [https://atriocss.atrio.site](https://atriocss.atrio.site)
