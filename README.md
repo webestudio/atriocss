@@ -21,18 +21,18 @@ Puedes clonar o [descargar este repositorio](https://github.com/webestudio/atrio
 <script src="scripts/atriocss.min.js"></script>
 ```
 
-O, puedes vincular [desde CDN](https://cdn.jsdelivr.net/npm/atriocss/styles/atriocss.min.css)
+O, puedes vincular [desde CDN](https://cdn.jsdelivr.net/gh/webestudio/atriocss/styles/atriocss.min.css)
 ```html
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/atriocss/styles/atriocss.min.css" media="all">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/webestudio/atriocss/styles/atriocss.min.css" media="all">
 
 <!-- .js optional -->
-<script src="https://cdn.jsdelivr.net/npm/atriocss/scripts/atriocss.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/webestudio/atriocss/scripts/atriocss.min.js"></script>
 ```
 
 
 créditos
 ===
-[Jorge Bravo](https://twitter.com/webestudio) desarrollador web.
+[Jorge Bravo](https://twitter.com/webestudio) desarrollador web - [jorgebravo.info](https://www.jorgebravo.info).
 
 
 licencia
