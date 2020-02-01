@@ -1,55 +1,32 @@
-/* Overwrite CSS */
-/* Only demo page */
-@import url("https://fonts.googleapis.com/css?family=Nunito:300,400,800&display=swap");
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  color: #741e70;
+// VARIABLES
+$c: ".btn-social";
+$networks: facebook, google, messenger, twitter;
+
+// THE DATASET FOR SOCIAL COLORS
+$socialColors: (
+	facebook: #3b5998,
+	google: #db4437,
+	messenger: #db4437,
+	twitter: #1da1f2
+);
+
+#{$c} {
+	border: none;
+	border-radius: 4px;
+	color: #FFF;
+	user-select: none;
+	cursor: pointer;
+
+	// --> NETWORKS <--
+	@each $network in $networks {
+		&--#{network} {
+			background: map-get($socialColors, $network);
+		}
+	}
 }
 
-.logo {
-  font-size: 70px;
-  font-weight: 800;
-  font-family: "Nunito", sans-serif;
-  background: linear-gradient(to right, #8f0a89 0%, #ff2759 60%, #ff2759 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  text-align: center;
-  text-shadow: none;
-  /* animation*/
-  animation: mg 1.5s;
-  animation-iteration-count: 1;
-  opacity: 0;
-  animation-fill-mode: forwards;
-}
 
-.sub-header {
-  font-family: "Nunito", sans-serif;
-  font-weight: 300;
-}
-
-/* backgrounds */
-.grad-v {
-  color: rgba(255, 255, 255, 0.8);
-}
-
-.callout .btn.outline, .callout .btn.outline:active {
-  color: var(--white);
-}
-
-.callout .btn.outline:hover {
-  color: rgba(255, 255, 255, 0.8);
-}
-
-/* pre code */
-pre {
-  display: none;
-  transition: all 0.2s ease;
-}
-
+// PRETIFY | CSS, HTML
 .pln {
  color: #909090;
 }
@@ -149,5 +126,3 @@ li.L7,
 li.L9 {
  background: #eee;
 }
-
-@keyframes mg {from {opacity: 0;}to {opacity: 1;}}
