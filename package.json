@@ -1,21 +1,30 @@
 {
   "name": "atriocss",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "Small CSS Framework for web design. HTML5 Kit resource collection.",
   "homepage": "https://atriocss.atrio.site",
-  "main": "index.js",
+  "main": "styles/atriocss.min.css",
   "scripts": {
     "test": ""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/webestudio/atriocss/styles/atriocss.min.css.git"
   },
   "keywords": [
     "CSS",
     "atriocss",
+    "atrio",
     "css",
     "framework",
     "html",
     "kit",
     "small"
   ],
-  "author": "Jorge Bravo Chaparro",
-  "license": "MIT"
+  "author": "Jorge Bravo (contacto@jorgebravo.info)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/webestudio/atriocss/issues",
+    "email": "contacto@jorgebravo.info"
+  },
 }
