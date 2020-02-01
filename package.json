@@ -1,6 +1,6 @@
 {
   "name": "atriocss",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "Small CSS Framework for web design. HTML5 Kit resource collection.",
   "homepage": "https://atriocss.atrio.site",
   "main": "styles/atriocss.min.css",
