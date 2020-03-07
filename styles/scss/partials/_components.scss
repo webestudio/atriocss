@@ -5,14 +5,13 @@ a.btn,
 input[type="submit"],
 input[type="reset"],
 input[type="button"] {
-    font-family: var(--btn-font-family);
-    vertical-align: middle;
-    user-select: none;
-    font-weight: var(--font-regular);
     border-radius: var(--radius);
-    white-space: nowrap;
-    border: 1px solid var(--black-200);
+    font-family: var(--btn-font-family);
+    font-weight: var(--font-regular);
     transition: all 0.2s;
+    user-select: none;
+    vertical-align: middle;
+    white-space: nowrap;
 }
 
 .btn:not(:disabled),
@@ -39,14 +38,13 @@ button:not(:disabled) {
     padding: 7px 12px;
     text-align: center;
     text-decoration: none;
-    background: var(--light);
-    border-radius: var(--radius);
-    border: 1px solid var(--black-200);
+    background-color: transparent;
+    border: var(--border-width) solid transparent;
     transition: all 0.2s;
     outline: none;
     cursor: pointer;
     user-select: none;
-    box-shadow: inset 0 1px 0 0 rgba(255, 255, 255, 0.4);
+    //box-shadow: inset 0 1px 0 0 rgba(255, 255, 255, 0.4);
     &.outline {
         box-shadow: none;
         background: transparent;
@@ -61,11 +59,16 @@ button:not(:disabled) {
     .icon {
         color: var(--color-darkGrey);
     }
-}
-
-.btn:hover {
-    color: var(--dark-grey-hover);
-    background: var(--light-hover);
+    &:hover {
+        color: var(--dark-grey-hover);
+        text-decoration: none;
+    }
+    &:disabled,
+    &.disabled,
+    fieldset:disabled & {
+        pointer-events: none;
+        opacity: .8;
+    }
 }
 
 .btn-block {
@@ -294,7 +297,7 @@ ul.group-buttons {
         top: 1px;
         color: var(--white);
         font-size: 0.7em;
-        text-shadow: 0 0 4px rgba(0, 0, 0, .4);
+        text-shadow: 0 0 4px rgba(0, 0, 0, 0.4);
     }
     &+.progress-bar {
         margin-top: 1rem;
@@ -415,7 +418,7 @@ progress[value] {
     position: relative;
     overflow: visible;
     z-index: 99;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, .2);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
     .brand {
         display: inline-block;
         float: left;
@@ -432,7 +435,7 @@ progress[value] {
         list-style: none;
         padding: 0;
         margin: 0;
-        transition: all .3s;
+        transition: all 0.3s;
         &.show {
             display: block !important;
         }
@@ -469,7 +472,7 @@ progress[value] {
             border-radius: 3px;
             z-index: 1;
             transform-origin: 4px 0px;
-            transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0), background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0), opacity 0.55s ease;
+            transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease;
         }
         span:first-child {
             transform-origin: 0% 0%;
@@ -485,7 +488,7 @@ progress[value] {
             color: var(--color-secondary) !important;
             height: var(--menu-height);
             line-height: var(--menu-height);
-            font-size: .80em;
+            font-size: 0.8em;
             &:hover {
                 background: transparent;
             }
@@ -508,7 +511,7 @@ progress[value] {
             width: 50px;
             height: var(--menu-height);
             line-height: var(--menu-height);
-            font-size: .80em;
+            font-size: 0.8em;
             span.notify-count {
                 color: var(--white);
                 position: absolute;
@@ -566,7 +569,7 @@ progress[value] {
 }
 
 $breakpoint-med: 45em; // 720px
-@media (max-width:$breakpoint-med) {
+@media (max-width: $breakpoint-med) {
     ul.menu-collapse {
         display: none !important;
         background: var(--black-025);
@@ -578,7 +581,7 @@ $breakpoint-med: 45em; // 720px
         width: 100%;
         z-index: 99;
         overflow: visible;
-        box-shadow: 0 4px 4px rgba(0, 0, 0, .2);
+        box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
         li.nav-link {
             display: block;
             padding: 0;
@@ -703,6 +706,47 @@ ul.menu {
     }
 }
 
+// list group
+.group-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    border: 1px solid var(--light);
+    border-radius: var(--radius);
+    .header-list {
+        display: block;
+        margin: 0;
+        padding: 10px 10px;
+        font-size: 0.95em;
+        background: var(--black-025);
+        border-bottom: 1px solid var(--light);
+    }
+    .item-list {
+        display: block;
+        margin: 0;
+        padding: 10px 10px;
+        font-size: 0.8em;
+        border-bottom: 1px solid var(--light);
+        position: relative;
+        &:last-child {
+            border-bottom: 0;
+        }
+    }
+    .dr-item {
+        cursor: pointer;
+        user-select: none;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        border-left: 3px solid var(--violet-500);
+        &:hover {
+            color: var(--color-primary);
+        }
+    }
+}
+
 // cards
 .card {
     padding: 1rem 1.5rem;
@@ -759,7 +803,7 @@ ul.menu {
         background-color: var(--black);
         color: var(--white);
         text-align: center;
-        font-size: .75em;
+        font-size: 0.75em;
         border-radius: 6px !important;
         border: 0;
         padding: 5px 0;

@@ -23,7 +23,8 @@ img.full-width {
     transition: all 0.2s;
 }
 
-.clearfix {
+.clearfix,
+.clear-fix {
     clear: both;
 }
 
@@ -155,7 +156,7 @@ img.full-width {
 }
 
 .bn,
-border-0 {
+.border-0 {
     border: 0;
 }
 
@@ -206,7 +207,7 @@ border-0 {
 
 // margin and paddings
 .m-0 {
-    margin: 0;
+    margin: 0 !important;
 }
 
 .mt-0 {
